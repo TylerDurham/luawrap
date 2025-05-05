@@ -1,0 +1,39 @@
+# Lua bytecode
+*.luac
+
+# LuaRocks artifacts
+*.rock
+*.rockspec
+deps/
+installed/
+luarocks/
+
+# Test logs
+output/
+test_output/
+*.log
+
+# Temporary or backup files
+*.bak
+*.tmp
+*~
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor/project settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Build artifacts
+bin/
+build/
+
+# Coverage reports
+coverage/
+lcov.info
+
