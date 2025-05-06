@@ -1,10 +1,14 @@
 local M = {}
 
-local shell = require("os_shell")
+local shell = require("lib.os_shell")
+local arguments = require("lib.arguments")
 
-function M.run(args)
-	local result = shell.exec_command("figlet", "-f", "cybermedium", "'Testing 1 2 3'")
-	print(result)
+function M.run(v)
+	local args = arguments.parse(v)
+
+	for key, value in pairs(args) do
+		print(key, value)
+	end
 end
 
 return M
