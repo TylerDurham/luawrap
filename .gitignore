@@ -30,7 +30,6 @@ Thumbs.db
 *.code-workspace
 
 # Build artifacts
-bin/
 build/
 
 # Coverage reports

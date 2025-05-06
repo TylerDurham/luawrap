@@ -7,6 +7,6 @@ local function get_script_dir()
 end
 
 local script_dir = get_script_dir() or "./"
-package.path = script_dir .. "./src/?.lua;" .. package.path
+package.path = script_dir .. "../src/?.lua;" .. package.path
 
 require("main").run(arg)
